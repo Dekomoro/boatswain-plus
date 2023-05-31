@@ -2,7 +2,6 @@
 
 A fork of Boatswain that attempts to fix major issues 
 
-[<img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png' />](https://flathub.org/apps/details/com.feaneron.Boatswain)
 
 ## Fixed Issues
 - Updated the gnome runtime to 44
