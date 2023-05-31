@@ -18,7 +18,7 @@ Boatswain-plus is built to allow emulating an arbitrary number of devices. This 
 to troubleshoot for a friend. To force Boatswain to use launch it as follows:
 
 ```
-$ env BOATSWAIN_EMULATE_DEVICES=1 flatpak run 
+$ env BOATSWAIN_EMULATE_DEVICES=1 flatpak run com.dekodx.Boatswain.Plus
 ```
 
 You can have multiple fake devices by setting the `BOATSWAIN_N_DEVICES` variable
