@@ -14,7 +14,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.mpris.MediaPlayer2.*"
+        "--talk-name=org.mpris.MediaPlayer2.*",
         "--filesystem=home"
     ],
     "x-run-args" : [
@@ -116,7 +116,7 @@
             ],
             "sources" : [
                 {
-                    "type" : "git",
+                    "type" : "git"
                 }
             ]
         }
