@@ -9,7 +9,7 @@
   <shortdesc xml:lang="en">Control your Elgato Stream Decks</shortdesc>
   <description xml:lang="en">a fork of boatswain</description>
   <homepage rdf:resource="https://github.com/Dekomoro/boatswain-plus />
-  <download-page rdf:resource="https://download.gnome.org/sources/boatswain/" />
+  <download-page rdf:resource="https://github.com/Dekomoro/boatswain-plus/releases" />
   <bug-database rdf:resource="https://github.com/Dekomoro/boatswain-plus/issues" />
 
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />

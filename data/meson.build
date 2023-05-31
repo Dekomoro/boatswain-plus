@@ -6,8 +6,8 @@ desktop_conf = configuration_data()
 desktop_conf.set('icon', application_id)
 desktop_file = i18n.merge_file(
   input: configure_file(
-    input: files('com.feaneron.Boatswain.desktop.in.in'),
-    output: 'com.feaneron.Boatswain.desktop.in',
+    input: files('com.dekodx.Boatswain.Plus.in.in'),
+    output: 'com.dekodx.Boatswain.Plus.desktop.in',
     configuration: desktop_conf,
   ),
   output: '@0@.desktop'.format(application_id),

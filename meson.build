@@ -12,7 +12,7 @@ gnome = import('gnome')
 ###########
 
 profile = get_option('profile')
-if profile == 'development'
+profile == 'plus'
   find_program('git')
   rev_txt = run_command('git','rev-parse','--short','HEAD').stdout().strip()
   rev = '-@0@'.format(rev_txt)
