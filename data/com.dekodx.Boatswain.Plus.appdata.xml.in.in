@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>@appid@</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Boatswain</name>
+  <url type="homepage">https://github.com/Dekomoro/boatswain-plus</url>
+  <url type="bugtracker">https://github.com/Dekomoro/boatswain-plus/issues</url>
+  <summary>Control your Elgato Stream Decks</summary>
+  <description>
+    <p>A fork of Boatswain fixing many issues</p>
+    <p>Fixes included:</p>
+    <ul>
+      <li>Updated Gnome runtime</li>
+      <li>removed broken launcher plugin</li>
+    </ul>
+  </description>
+  <!-- Translators: please do NOT translate this -->
+  <developer_name>Roice Young</developer_name>
+  <update_contact>creativerawdy_at_gmail.com</update_contact>
+  <translation type="gettext">boatswain</translation>
+
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>Notifications</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+
+    <release date="2023-05-23" version="0.1.0">
+      <description>
+        <p>
+          <ul>
+            <li>Initial Release</li>
+          </ul>
+        </p>
+      </description>
+    </release>
+
+  <content_rating type="oars-1.1" />
+</component>
