@@ -1,0 +1,125 @@
+{
+    "app-id" : "com.dekodx.Boatswain.Plus",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "44",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "boatswain",
+    "tags" : [
+        "plus"
+    ],
+    "finish-args" : [
+        "--device=all",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--talk-name=org.mpris.MediaPlayer2.*"
+        "--filesystem=home"
+    ],
+    "x-run-args" : [
+        "--debug"
+    ],
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a"
+    ],
+    "modules" : [
+        {
+            "name" : "libusb",
+            "buildsystem" : "autotools",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/libusb/libusb.git"
+                }
+            ]
+        },
+        {
+            "name" : "hidapi-libusb",
+            "buildsystem" : "autotools",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/libusb/hidapi.git"
+                }
+            ]
+        },
+        {
+            "name" : "gusb",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Ddocs=false",
+                "-Dtests=false",
+                "-Dvapi=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/hughsie/libgusb.git",
+                    "branch" : "main"
+                }
+            ]
+        },
+        {
+            "name" : "libpeas",
+            "buildsystem" : "meson",
+            "cleanup" : [
+                "/bin/*",
+                "/lib/peas-demo"
+            ],
+            "config-opts" : [
+                "-Dgtk_doc=false",
+                "-Dlua51=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libpeas.git",
+                    "branch" : "main"
+                }
+            ]
+        },
+        {
+            "name" : "libportal",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dbackend-gtk3=disabled",
+                "-Dbackend-gtk4=enabled",
+                "-Dbackend-qt5=disabled",
+                "-Ddocs=false",
+                "-Dtests=false",
+                "-Dvapi=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/flatpak/libportal.git",
+                    "commit" : "f84a5606f15dfff6771a12d2ce75699d2c7a3d8f"
+                }
+            ]
+        },
+        {
+            "name" : "boatswain",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dtracing=true",
+                "-Dprofile=development"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/World/boatswain.git"
+                }
+            ]
+        }
+    ]
+}
