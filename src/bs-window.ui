@@ -23,7 +23,7 @@
   </menu>
 
   <template class="BsWindow" parent="GtkApplicationWindow">
-    <property name="title">Boatswain</property>
+    <property name="title">Boatswain Plus</property>
     <property name="default-width">1200</property>
     <property name="default-height">720</property>
 

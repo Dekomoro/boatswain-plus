@@ -1,6 +1,6 @@
 ## 
 
-A fork of Boatswain that attempts to fix major issues 
+A fork of Boatswain that attempts to fix major issues
 
 ## Fixed Issues
 - Updated the gnome runtime to 44
