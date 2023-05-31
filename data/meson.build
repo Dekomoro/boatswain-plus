@@ -6,7 +6,7 @@ desktop_conf = configuration_data()
 desktop_conf.set('icon', application_id)
 desktop_file = i18n.merge_file(
   input: configure_file(
-    input: files('com.dekodx.Boatswain.Plus.in.in'),
+    input: files('com.dekodx.Boatswain.Plus.desktop.in.in'),
     output: 'com.dekodx.Boatswain.Plus.desktop.in',
     configuration: desktop_conf,
   ),
@@ -31,8 +31,8 @@ appdata_conf = configuration_data()
 appdata_conf.set('appid', application_id)
 appstream_file = i18n.merge_file(
   input: configure_file(
-    input: files('com.feaneron.Boatswain.appdata.xml.in.in'),
-    output: 'com.feaneron.Boatswain.appdata.xml.in',
+    input: files('com.dekodx.Boatswain.Plus.appdata.xml.in.in'),
+    output: 'com.dekodx.Boatswain.Plus.xml.in',
     configuration: appdata_conf
   ),
   output: '@0@.appdata.xml'.format(application_id),
@@ -41,7 +41,7 @@ appstream_file = i18n.merge_file(
   install_dir: get_option('datadir') / 'appdata',
 )
 
-install_data('com.feaneron.Boatswain.gschema.xml',
+install_data('com.dekodx.Boatswain.Plus.gschema.xml',
   install_dir: get_option('datadir') / 'glib-2.0/schemas',
 )
 
