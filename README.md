@@ -2,7 +2,6 @@
 
 A fork of Boatswain that attempts to fix major issues 
 
-
 ## Fixed Issues
 - Updated the gnome runtime to 44
 - Completely removed the Launcher plugin which was broken with boatswains migration to flatpak
